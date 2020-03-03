@@ -62,7 +62,7 @@ if __name__ == "__main__":
         dico = dict([(att, getattr(parsed_args, att)) for att in dir(parsed_args) if not att.startswith("_")])
         config.update(dico)
 
-        for item in ["initialize", "search_sub", "process_word", "postprocess"]:
+        for item in    ["initialize", "search_sub", "process_word", "postprocess"]:
             if getattr(parsed_args, item):
                 try:
                     getattr(main_module, item)(config)
@@ -70,5 +70,6 @@ if __name__ == "__main__":
                     traceback.print_exc()
                     print(e)
                     input("Bug occurs!!!! Please take a screen shot of the console and send it to Fintech Lab.\nPress Enter to close the program")
+les modifications marches
 
 
