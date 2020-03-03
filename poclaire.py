@@ -71,5 +71,6 @@ if __name__ == "__main__":
                     print(e)
                     input("Bug occurs!!!! Please take a screen shot of the console and send it to Fintech Lab.\nPress Enter to close the program")
 les modifications marches
+deuxiemes modifications 
 
 
